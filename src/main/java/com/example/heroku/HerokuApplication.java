@@ -48,7 +48,7 @@ public class HerokuApplication {
     SpringApplication.run(HerokuApplication.class, args);
   }
 
-  @RequestMapping("/")
+  @RequestMapping("/hello")
   String index() {
     return "index";
   }
