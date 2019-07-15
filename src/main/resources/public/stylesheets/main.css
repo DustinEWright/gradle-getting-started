@@ -24,4 +24,8 @@
     border: 2px solid white; }
     .jumbotron .lang-logo img {
       max-width: 100%; }
-
+    
+/* List Styles */
+div.container {
+	style: list-style-type:disc;
+}

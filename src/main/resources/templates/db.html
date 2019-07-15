@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org"
 	th:replace="~{fragments/layout :: layout (~{::body},'db')}">
-
+<head>
+<link rel="stylesheet" href="resources/public/stylesheets/main.css">
+<!-- src/main/resources/public/stylesheets/main.css  -->
+<title>DB Demo</title>
+</head>
 <body>
 
-	<h1>Demo Page Showing The Database Records</h1>
+	<h1>Demo Page Showing Database Records</h1>
 	<h2>heroku addons:create heroku-postgresql:hobby-dev</h2>
 
 	<div class="container">
 		<h1>Database Output</h1>
-		<ol start="1" th:each="record : ${records}">
+		<ul th:each="record : ${records}">
 			<li th:text="${record}" />
-		</ol>
+		</ul>
 	</div>
 
 </body>
